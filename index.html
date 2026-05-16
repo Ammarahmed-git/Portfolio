@@ -285,6 +285,16 @@
   }
   .project-card:hover { transform: translateY(-6px); border-color: rgba(255,60,172,0.2); box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
   .project-card:hover::before { opacity: 1; }
+
+  /* Special "new" badge for latest project */
+  .project-card.is-new::after {
+    content: 'NEW';
+    position: absolute; top: 1rem; left: 1.8rem;
+    font-size: 0.6rem; font-weight: 700; letter-spacing: 1.5px;
+    color: var(--dark); background: var(--c4);
+    padding: 2px 8px; border-radius: 100px;
+  }
+
   .project-num {
     font-family: var(--font-head); font-size: 3rem; font-weight: 800;
     color: rgba(255,255,255,0.04); position: absolute; top: 1rem; right: 1.5rem;
@@ -555,6 +565,7 @@
           <span class="skill-pill pill-purple">NumPy</span>
           <span class="skill-pill pill-purple">Matplotlib</span>
           <span class="skill-pill pill-purple">Seaborn</span>
+          <span class="skill-pill pill-purple">Streamlit</span>
         </div>
       </div>
     </div>
@@ -660,6 +671,78 @@
         </div>
       </div>
 
+      <!-- ✅ PROJECT CARD #07 -->
+      <div class="project-card is-new reveal">
+        <div class="project-num">07</div>
+        <div class="project-icon" style="background:rgba(0,245,212,0.1); margin-top: 1.4rem;">📄</div>
+        <div class="project-name">AI Resume Analyzer & ATS Predictor</div>
+        <div class="project-desc">Upload a resume PDF and let AI predict your job category, extract key skills, and calculate an ATS compatibility score — all powered by a trained ML model.</div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Streamlit</span>
+          <span class="project-tag">Scikit-Learn</span>
+          <span class="project-tag">PyPDF2</span>
+          <span class="project-tag">TF-IDF</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Ammarahmed-git/Resume-Analyzer-ATS-Score-Predictor" class="project-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <!-- ✅ PROJECT CARD #08 -->
+      <div class="project-card is-new reveal">
+        <div class="project-num">08</div>
+        <div class="project-icon" style="background:rgba(255,230,109,0.1); margin-top: 1.4rem;">🚗</div>
+        <div class="project-name">Car Price Prediction App</div>
+        <div class="project-desc">Enter car details like brand, year, mileage, and fuel type to instantly get a predicted market price — trained on real-world automotive data using regression models.</div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Streamlit</span>
+          <span class="project-tag">Scikit-Learn</span>
+          <span class="project-tag">Pandas</span>
+          <span class="project-tag">Regression</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Ammarahmed-git/Car_Price_Pediction_App/tree/main" class="project-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <!-- ✅ PROJECT CARD #09 -->
+      <div class="project-card is-new reveal">
+        <div class="project-num">09</div>
+        <div class="project-icon" style="background:rgba(43,134,197,0.1); margin-top: 1.4rem;">🏠</div>
+        <div class="project-name">House Price Prediction App</div>
+        <div class="project-desc">Predict property prices based on location, size, number of rooms, and other features. Built with a trained ML regression model and an interactive Streamlit interface.</div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Streamlit</span>
+          <span class="project-tag">Scikit-Learn</span>
+          <span class="project-tag">NumPy</span>
+          <span class="project-tag">Regression</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Ammarahmed-git" class="project-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <!-- ✅ PROJECT CARD #10 -->
+      <div class="project-card is-new reveal">
+        <div class="project-num">10</div>
+        <div class="project-icon" style="background:rgba(255,60,172,0.1); margin-top: 1.4rem;">🛡️</div>
+        <div class="project-name">Spam Detection App</div>
+        <div class="project-desc">Classifies messages as spam or legitimate in real time using a trained NLP model. Paste any text and instantly know if it's junk — powered by TF-IDF and a Naive Bayes classifier.</div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Streamlit</span>
+          <span class="project-tag">NLP</span>
+          <span class="project-tag">TF-IDF</span>
+          <span class="project-tag">Naive Bayes</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Ammarahmed-git/SpamDetectionApp" class="project-link">↗ GitHub</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -725,7 +808,7 @@
 </section>
 
 <footer>
-  <p>Designed & built by <span>Ammar Ahmed</span> · 2024</p>
+  <p>Designed & built by <span>Ammar Ahmed</span> · 2025</p>
 </footer>
 
 <script>
